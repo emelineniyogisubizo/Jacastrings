@@ -30,4 +30,9 @@ console.log(upper.toUpperCase());
 let lower = "UndERneath";
 let lower1 = "amazing";
 console.log(lower.toLowerCase());
-console.log(lower1.toLowerCase());
+console.log(lower1.toLowerCase()); 
+let title = "A wonderful world"
+   .split(" ")
+   .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+   .join(" ");
+console.log(title);
